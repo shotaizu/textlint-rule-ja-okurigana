@@ -6,7 +6,8 @@
   "main": "lib/okurigana.js",
   "files": [
     "lib/",
-    "src/"
+    "src/",
+    "dict/"
   ],
   "scripts": {
     "test": "textlint-scripts test",
