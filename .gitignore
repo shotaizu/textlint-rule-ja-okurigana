@@ -32,4 +32,4 @@ node_modules
 npm-debug.log
 
 # Publish src/ instead lib/
-/lib
+# /lib

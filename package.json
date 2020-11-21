@@ -3,7 +3,7 @@
   "keywords": [
     "textlintrule"
   ],
-  "main": "src/okurigana.js",
+  "main": "lib/okurigana.js",
   "files": [
     "lib/",
     "src/"
