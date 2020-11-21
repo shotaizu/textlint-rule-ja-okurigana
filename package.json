@@ -1,0 +1,31 @@
+{
+  "version": "0.9.0",
+  "keywords": [
+    "textlintrule"
+  ],
+  "main": "lib/index.js",
+  "files": [
+    "lib/",
+    "src/"
+  ],
+  "scripts": {
+    "test": "textlint-scripts test",
+    "build": "textlint-scripts build",
+    "prepublish": "npm run --if-present build"
+  },
+  "devDependencies": {
+    "textlint-rule-helper": "^2.1.1",
+    "textlint-scripts": "^3.0.0",
+    "textlint-tester": "^5.2.6"
+  },
+  "name": "textlint-rule-ja-okurigana",
+  "description": "Check Okurigana for Japanese",
+  "directories": {
+    "test": "test"
+  },
+  "author": "S.Izumiyama",
+  "license": "GNUGPLv3",
+  "dependencies": {
+    "textlint": "^11.7.6"
+  }
+}
