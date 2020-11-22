@@ -12,11 +12,9 @@ Check Okurigana
 
 Install with [npm](https://www.npmjs.com/):
 
-    npm install textlint-rule-okurigana
+    npm install shotaizu/textlint-rule-okurigana
 
 ## Usage
-
-Set environment variable "TEXTLINT_RULE_OKURIGANA" for dictionary directory.
 
 Via `.textlintrc`(Recommended)
 
@@ -24,6 +22,18 @@ Via `.textlintrc`(Recommended)
 {
     "rules": {
         "okurigana": true
+    }
+}
+```
+
+There is one option: you need to point out their location.
+
+```json
+{
+    "rules": {
+        "okurigana": {
+            "dictionary_dir": <path-to-directory-including-okurigana.dic>
+            }
     }
 }
 ```
@@ -47,6 +57,8 @@ Run test code in `test` folder.
 Test textlint rule by [textlint-tester](https://github.com/textlint/textlint-tester).
 
     npm test
+
+But this may fail for now...
 
 ## License
 
