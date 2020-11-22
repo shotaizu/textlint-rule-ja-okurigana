@@ -32,7 +32,7 @@ There is one option: you need to point out their location.
 {
     "rules": {
         "okurigana": {
-            "dictionary_dir": <path-to-directory-including-okurigana.dic>
+            "dictionary_dir": "<path-to-directory-including-okurigana.dic>"
             }
     }
 }
