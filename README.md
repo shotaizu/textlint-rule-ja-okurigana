@@ -62,4 +62,5 @@ But this may fail for now...
 
 ## License
 
-GNUGPLv3 © S.Izumiyama
+- GPLv3
+- Copyrights 2020 Shota Izumiyama
