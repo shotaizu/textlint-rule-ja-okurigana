@@ -36,7 +36,9 @@ function initDict(dic_dir){
         const file = fs.readFileSync(dic_dir + '/okurigana.dic', 'utf-8');
     } catch (err) {
         if (err.code !== 'ENOENT') throw err;
+        /* Do not show any log ? I am not sure to handle such error logs
         console.log("File not found:" + dic_dir + "/okurigana.dic");
+        */
         return dict;
     }
     for (var line of file.split('\n')){
