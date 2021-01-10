@@ -32,8 +32,9 @@ function initDict(dic_dir){
     }
     //console.log(dic_dir + "/dict.dic");
     var dict = [];
+    var file;
     try {
-        const file = fs.readFileSync(dic_dir + '/okurigana.dic', 'utf-8');
+        file = fs.readFileSync(dic_dir + '/okurigana.dic', 'utf-8');
     } catch (err) {
         if (err.code !== 'ENOENT') throw err;
         /* Do not show any log ? I am not sure to handle such error logs
