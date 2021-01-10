@@ -32,7 +32,13 @@ function initDict(dic_dir){
     }
     //console.log(dic_dir + "/dict.dic");
     var dict = [];
-    const file = fs.readFileSync(dic_dir + '/okurigana.dic', 'utf-8');
+    try {
+        const file = fs.readFileSync(dic_dir + '/okurigana.dic', 'utf-8');
+    } catch (err) {
+        if (err.code !== 'ENOENT') throw err;
+        console.log("File not found:" + dic_dir + "/okurigana.dic");
+        return dict;
+    }
     for (var line of file.split('\n')){
         if( line.charAt(0) === '#') continue;
         const arr = line.split(' ');
